@@ -12,8 +12,6 @@ export function getNumbersWithSquareRoots(max) {
             integers.push(i);
         }
     }
-        
-    
     return integers; 
 }
 console.log(getNumbersWithSquareRoots(17)); 

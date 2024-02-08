@@ -10,8 +10,15 @@
 
 export function getAverage(array) {
   // Your code goes here...
-
-}
+    
+    for (let i = 0; i <= array.length; i++);
+        const sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        const avg = sum / array.length;
+        
+     return avg;
+  }
+  
+  console.log(getAverage([22, 45, 4, 65]));
 
 
 /** 
@@ -23,8 +30,19 @@ export function getAverage(array) {
 
 export function getStringSum(str) {
   // Your code goes here...
-
+  for (let i = 0; i <str.length; i++);
+  if (str.match(/[0-9]/g)) {
+      let values = str.match(/[0-9]/g);
+      var arr = values.concat();
+      return eval(arr.join('+'));
+    }
+      else {
+          return 0;
+    } 
 }
+
+console.log(getStringSum("GH2U87A")); 
+console.log(getStringSum("GHIUJUHSG")); 
 
 
 // === TEST YOURSELF ===
